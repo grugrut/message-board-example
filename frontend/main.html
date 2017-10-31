@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>Message Board</title>
+  </head>
+  <body>
+    <form id="messageboard">
+      <input id="mes" name="message"></form>
+      <input id="sub" type="submit">
+    </form>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+     $("#sub").submit(function() {
+         if (!($("#mes").val())) return false;
+     };
+    </script>
+  </body>
+</html>
